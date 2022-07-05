@@ -1,0 +1,23 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAC926;
+    font-size: 12px;    
+}
+
+h2{
+    font-size: 24px;
+}
+
+.precio{
+    font-size: 18px;
+}
+
+.descuento-descripcion{
+    font-size: 16px;
+}
+
+img{
+    width: 20%;
+    height: auto;
+}
+

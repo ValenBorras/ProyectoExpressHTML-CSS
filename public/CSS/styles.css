@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #EAC926;
@@ -20,4 +23,5 @@ img{
     width: 20%;
     height: auto;
 }
+
 

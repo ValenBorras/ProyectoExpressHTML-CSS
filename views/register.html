@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Trispace:wght@100;400&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <title>Register</title>
+</head>
+<body class="form">
+    <form action="/crear-producto" method="POST" class="create-form">
+        <div>
+           <label for="nombreCompleto">Nombre y Apellido:</label>
+           <input type="text" name="nombreCompleto" id="nombreCompleto" class="control">
+        </div>
+        <div>
+            <label for="usuario">Nombre de Usuario:</label>
+            <input type="text" name="usuario" id="usuario" class="control">
+        </div>
+        <div>
+            <label for="nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" name="nacimiento" id="nacimiento" class="control">
+        </div>
+        <div>
+            <label for="domicilio">Domicilio:</label>
+            <input type="text" name="domicilio" id="domicilio" class="control">
+        </div>
+        <div>
+            <label>Perfil de Usuario:</label>
+            <label for="perfilC"> <input type="radio" name="perfil" id="perfilC" value="compra"> Comprador </label>
+            <label for="perfilV"> <input type="radio" name="perfil" id="perfilV" value="venta"> Vendedor </label>
+        </div>
+        <div>
+            <label>Categorias de Interes:</label>
+                <label for="electro" class="checkbox-label"><input type="checkbox" name="cat" id="electro" value="electro">Electro</label>
+                <label for="moda" class="checkbox-label"><input type="checkbox" name="cat" id="moda" value="moda">Moda</label>
+                <label for="hogar" class="checkbox-label"><input type="checkbox" name="cat" id="hogar" value="hogar">Hogar</label>
+                <label for="jugueteria" class="checkbox-label"><input type="checkbox" name="cat" id="jugueteria" value="jugueteria">Jugueteria</label>
+                <label for="vidaS" class="checkbox-label"><input type="checkbox" name="cat" id="vidaS" value="vidaS">Vida Sana</label>
+        </div>
+        <div>
+            <label for="fotoUsuario">Foto de Usuario</label>
+            <input type="file" name="fotoUsuario" id="fotoUsuario" accept=".jpg" class="control">
+        </div>
+        <div>
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" name="contraseña" id="contraseña" class="control">
+        </div>
+        <div>
+            <label for="conf-contraseña">Confirmar Contraseña:</label>
+            <input type="password" name="conf-contraseña" id="conf-contraseña" class="control">
+        </div>
+        <a href="/"><button type="button" class="button-form">Guardar</button></a>
+        <button type="reset" class="button-form">Borrar</button>
+        <!--
+        <div>
+           <label for="precio">Precio:</label>
+           <input type="number" name="precio" id="precio" placeholder="123.56" class="control">
+        </div>
+        <div>
+           <label for="categoria">Categoria:</label>
+           <select name="categoria" id="categoria" class="control">
+               <option value="hogar">Hogar</option>
+               <option value="electro">Electro</option>
+               <option value="indumentaria">Indumentaria</option>
+           </select>
+        </div>
+        <div>
+           <label for="ciudad">Ciudad:</label>
+           <select name="ciudad" id="ciudad" class="control">
+               <option value="baires">Buenos Aires</option>
+               <option value="ros">Rosario</option>
+               <option value="mdz">Mendoza</option>
+           </select>
+        </div>
+        <div>
+           <label for="descripcion">Descripccion:</label>
+           <textarea name="descripcion" id="descripcion" class="control"></textarea>
+        </div>
+        <div>
+           <label for="enOferta">Esta en oferta:</label>
+           <input type="radio" name="enOferta" id="enOferta" >
+        </div>
+        <button type="submit" class="button-form">Guardar</button>
+        <button type="reset" class="button-form">Borrar</button>
+        -->
+   </form>
+</body>
+</html>

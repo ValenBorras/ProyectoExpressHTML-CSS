@@ -1,0 +1,26 @@
+footer div{
+    text-align: center;
+    margin: 0 15px;
+}
+
+footer i{
+    font-size: 2em;
+    margin: 10px;
+    color: #1259c3;
+}
+
+footer i:hover{
+    color: #39b54a;
+}
+
+footer p{
+    margin-bottom: 10px;
+}
+
+.footer-main-section{
+    display: flex;
+}
+
+.footer-section{
+    align-self: flex-end;
+}

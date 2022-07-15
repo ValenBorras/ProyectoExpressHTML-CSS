@@ -1,0 +1,130 @@
+.banner{
+    display: block;
+    max-width: 100%;
+}
+
+.tienda-principal{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #ebebeb;
+}
+
+article{
+    margin: 0 10px;
+}
+
+.producto{
+    margin-top: 10px;
+    
+}
+
+.fotos-producto{
+    display: block;
+    width: 100%;
+    margin: 0px; 
+}
+
+.caja-descripcion{
+    border-top: solid 1px #ebebeb;
+    background-color: #fff;
+    padding: 15px;
+    margin: 0px; 
+}
+
+.titulo{
+    display: block;
+    text-align: left;
+    color: #666;
+    margin: 15px 30px;
+    font-size: 24px;
+}
+
+.logo-envio i{
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.precio{
+    display: block;
+    font-size: 18px;
+}
+
+.descuento{
+    display: block;
+    color: #39b54a;
+    font-size: 16px;
+}
+
+.descripccion{
+    color: #666;
+    margin-top: 15px;
+    display: none;
+}
+
+.section-uno{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-dos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+@media (min-width: 369px){
+    .descripccion{
+        display: block;
+    }
+
+    .producto{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .fotos-producto{
+        width: 45vw;
+    }
+
+    .section-uno{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section-dos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 769px){
+    .section-uno{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding: 0 30px;
+    }
+
+    .section-dos{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding: 0 30px 30px 30px;
+    }
+
+    .fotos-producto{
+        width: 100%;
+    }
+}

@@ -1,12 +1,11 @@
-footer div{
-    text-align: center;
-    margin: 0 15px;
+footer{
 }
 
 footer i{
     font-size: 2em;
     margin: 10px;
     color: #1259c3;
+    transition: color 400ms;
 }
 
 footer i:hover{
@@ -17,10 +16,27 @@ footer p{
     margin-bottom: 10px;
 }
 
-.footer-main-section{
-    display: flex;
+.footer-section{
+    text-align: center;
 }
 
-.footer-section{
-    align-self: flex-end;
+.copyright{
+    margin-top: 15px;
+    font-size: 13px;
+    text-align: center;
+}
+.footer-main-section{
+    display: flex;
+    flex-direction: column;    
+}
+
+@media (min-width: 769px){
+    .footer-main-section{
+        flex-direction: row;
+    }
+    
+    .footer-section{
+        align-self: flex-end;
+        margin: 0 15px;
+    }
 }

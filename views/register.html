@@ -49,19 +49,19 @@
     <form action="/register" method="POST" class="create-form">
         <div>
            <label for="nombreCompleto">Nombre y Apellido:</label>
-           <input type="text" name="nombreCompleto" id="nombreCompleto" class="control">
+           <input type="text" name="nombreCompleto" id="nombreCompleto" class="control"required minlength="7" required>
         </div>
         <div>
             <label for="usuario">Nombre de Usuario:</label>
-            <input type="text" name="usuario" id="usuario" class="control">
+            <input type="text" name="usuario" id="usuario" class="control" minlength="4" required>
         </div>
         <div>
             <label for="nacimiento">Fecha de Nacimiento:</label>
-            <input type="date" name="nacimiento" id="nacimiento" class="control">
+            <input type="date" name="nacimiento" id="nacimiento" class="control" required>
         </div>
         <div>
             <label for="domicilio">Domicilio:</label>
-            <input type="text" name="domicilio" id="domicilio" class="control">
+            <input type="text" name="domicilio" id="domicilio" class="control" required>
         </div>
         <div>
             <label>Perfil de Usuario:</label>
@@ -78,18 +78,19 @@
         </div>
         <div>
             <label for="fotoUsuario">Foto de Usuario</label>
-            <input type="file" name="fotoUsuario" id="fotoUsuario" accept=".jpg" class="control">
+            <input type="file" name="fotoUsuario" id="fotoUsuario" accept=".jpg" class="control" required>
         </div>
         <div>
             <label for="contraseña">Contraseña:</label>
-            <input type="password" name="contraseña" id="contraseña" class="control">
+            <input type="password" name="contraseña" id="contraseña" class="control" required minlength="8">
         </div>
         <div>
             <label for="conf-contraseña">Confirmar Contraseña:</label>
-            <input type="password" name="conf-contraseña" id="conf-contraseña" class="control">
+            <input type="password" name="conf-contraseña" id="conf-contraseña" class="control" required minlength="8">
         </div>
-        <a href="/"><button type="button" class="button-form">Guardar</button></a>
+        <a href="/"><button type="submit" class="button-form">Guardar</button></a>
         <button type="reset" class="button-form">Borrar</button>
+        <a href="/"><button type="button" class="button-form">Volver</button></a>
    </form>
 </section>
 <footer>

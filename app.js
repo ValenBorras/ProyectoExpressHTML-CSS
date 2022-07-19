@@ -1,19 +1,10 @@
 const express = require('express');
 const app = express();
-const mime = require('mime');
 
 const path = require('path');
 const port = process.env.PORT || 3000;
-const setHeadersOnStatic = (res, path, stat) => {
-    const type = mime.getType(path);
-    res.set('content-type', type);
-  }
-  
-  const staticOptions = {
-    setHeaders: setHeadersOnStatic
-  }
 
-app.use(express.static(path.resolve(__dirname, '/public'), staticOptions));
+app.use(express.static(path.resolve(__dirname + '/public')));
 
 app.listen(port,() => console.log('Servidor corriendo...'));
 

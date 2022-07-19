@@ -1,0 +1,89 @@
+.create-form {
+    padding: 20px 15px;
+    background-color:#ebebeb;
+    display: block;
+    max-width: fit-content;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+.create-form div{ 
+    margin-bottom: 15px;
+    
+}
+
+.login-form{
+    padding: 20px 15px;
+    background-color:#ebebeb;
+    display: block;
+    max-width: fit-content;
+    border-radius: 10px;
+    margin: 20px 0 25vw 0;    
+}
+
+.login-form input{
+    margin-bottom: 15px;
+    width: 60vw;
+}
+
+.create-form div label{
+    margin-bottom: 5px;
+    font-weight: 800;
+    display: block;
+}
+
+.control {
+    padding: 8px 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.button-form {
+    background-color: #1259c3;
+    border: none;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+.login{
+    padding: 8px 8px;
+    border: none;
+    border-radius: 5px;
+    width: 80vw;
+}
+
+.button-login{
+    background-color: #1259c3;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin: 5px 0px;
+    width: 60vw;
+    transition: all 450ms;
+}
+
+.button-login:hover{
+    background-color: #0022AA;
+}
+
+
+@media (min-width: 769px){
+    .login-form input{
+        width: 30vw;
+    }
+
+    .button-login{
+        width: 30vw;
+    }
+}

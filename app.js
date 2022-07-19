@@ -13,7 +13,7 @@ const setHeadersOnStatic = (res, path, stat) => {
     setHeaders: setHeadersOnStatic
   }
 
-app.use(express.static(path.resolve(__dirname, './public'), staticOptions));
+app.use(express.static(path.resolve(__dirname, '/public'), staticOptions));
 
 app.listen(port,() => console.log('Servidor corriendo...'));
 

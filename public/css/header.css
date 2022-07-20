@@ -44,7 +44,7 @@
 }
 
 .barra-busqueda input:focus{
-    border:none;
+    outline: none;
 }
 
 .barra-busqueda button{

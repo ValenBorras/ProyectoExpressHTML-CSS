@@ -20,7 +20,8 @@
 .login-form{
     padding: 20px 15px;
     background-color:#ebebeb;
-    display: block;
+    display: flex;
+    flex-direction: column;
     max-width: fit-content;
     border-radius: 10px;
     margin: 20px 0 25vw 0;    

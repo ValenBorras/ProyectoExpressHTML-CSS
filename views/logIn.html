@@ -48,12 +48,13 @@
     <section class="form">
         <form action="/register" method="POST" class="login-form">
             <div>
-               <input type="text" name="nombreCompleto" id="nombreCompleto" class="login" placeholder="Nombre de Usuario" required>
+               <input type="text" name="nombreCompleto" id="nombreCompleto" class="login" placeholder="Nombre de Usuario" required minlength="4">
             </div>
             <div>
-                <input type="password" name="password" id="password" class="login" placeholder="Contraseña" required>
+                <input type="password" name="password" id="password" class="login" placeholder="Contraseña" required minlength="7">
             </div>
-            <a href="/"><button type="button" class="button-login">Enviar</button></a>
+            <button type="submit" class="button-login">Enviar</button>
+            <a href="/"><button type="button" class="button-login">Volver</button></a>
        </form>
     </section>
     <footer>
